@@ -9,6 +9,7 @@ are used.
 */
 
 #include <iostream>
+#include <queue>
 using namespace std;
 
 template<class T>
@@ -36,6 +37,10 @@ class BST {
         int totalExternalNodes(Node*);
         T minimum(Node*);
         T maximum(Node*);
+        void inorder(Node*);
+        void postorder(Node*);
+        void preorder(Node*);
+        void levelorder(Node*);
 
     public:
         BST<T>() : tree(nullptr){}
@@ -85,6 +90,22 @@ class BST {
                 return {};
             }
             return maximum(tree);
+        }
+
+        void inorder() {        // print inorder traversal
+            inorder(tree);
+        }
+
+        void postorder(){       // print postorder traversal
+            postorder(tree);
+        }
+
+        void preorder(){        // print preorder traversal
+            preorder(tree);
+        }
+
+        void levelorder(){      // print levelorder traversal
+            levelorder(tree);
         }
 };
 
@@ -223,3 +244,48 @@ T BST<T>::maximum(Node* root) {
         maximum(root->right);
     }
 } 
+
+template<class T>
+void BST<T>::inorder(Node *root) {
+    if (root == nullptr) 
+        return;
+    inorder(root->left);
+    cout << root->data << " ";
+    inorder(root->right);
+}
+
+template<class T>
+void BST<T>::postorder(Node *root) {
+     if (root == nullptr) 
+        return;
+    postorder(root->left);
+    postorder(root->right);
+    cout << root->data << " ";
+
+}
+
+template<class T>
+void BST<T>::preorder(Node *root) {
+     if (root == nullptr) 
+        return;
+    cout << root->data << " ";
+    preorder(root->left);
+    preorder(root->right);
+}
+
+template<class T>
+void BST<T>::levelorder(Node *root) {
+    if (root == nullptr)
+        return;
+    queue<T> que;
+    que.push(root);
+    while (!que.empty()) {
+        Node* curr = que.front();
+        que.pop();
+        cout << curr->data << " ";
+        if (curr->left != nullptr)
+            que.push(curr->left);
+        if (curr->right != nullptr)
+            que.push(curr->right);
+    }
+}
