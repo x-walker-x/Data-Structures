@@ -1,7 +1,10 @@
 /*
- 
+
  BINARY SEARCH TREE 
     using C++
+
+Templates and Generic Programming Concepts
+are used.
 
 */
 
