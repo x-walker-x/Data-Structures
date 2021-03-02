@@ -1,10 +1,8 @@
 /*
 
  BINARY SEARCH TREE 
-    using C++
-
-Templates and Generic Programming are used.
-
+    - implemented using C++
+    
 */
 
 #include <iostream>
