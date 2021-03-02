@@ -3,14 +3,12 @@
  BINARY SEARCH TREE 
     using C++
 
-Templates and Generic Programming Concepts
-are used.
+Templates and Generic Programming are used.
 
 */
 
 #include <iostream>
 #include <queue>
-using namespace std;
 
 template<class T>
 class BST {     
@@ -130,9 +128,9 @@ bool BST<T>::update(Node* root, T oldVal, T newVal) {
         root->data = newVal;
         return true;
     } else if (oldVal < root->data) {
-        return search(root->left, oldVal, newVal);
+        return update(root->left, oldVal, newVal);
     } else {
-        return search(root->right, oldVal, newVal);
+        return update(root->right, oldVal, newVal);
     }
 }
 
@@ -250,7 +248,7 @@ void BST<T>::inorder(Node *root) {
     if (root == nullptr) 
         return;
     inorder(root->left);
-    cout << root->data << " ";
+    std::cout << root->data << " ";
     inorder(root->right);
 }
 
@@ -260,15 +258,14 @@ void BST<T>::postorder(Node *root) {
         return;
     postorder(root->left);
     postorder(root->right);
-    cout << root->data << " ";
-
+    std::cout << root->data << " ";
 }
 
 template<class T>
 void BST<T>::preorder(Node *root) {
      if (root == nullptr) 
         return;
-    cout << root->data << " ";
+    std::cout << root->data << " ";
     preorder(root->left);
     preorder(root->right);
 }
@@ -277,12 +274,12 @@ template<class T>
 void BST<T>::levelorder(Node *root) {
     if (root == nullptr)
         return;
-    queue<T> que;
+    std::queue<T> que;
     que.push(root);
     while (!que.empty()) {
         Node* curr = que.front();
         que.pop();
-        cout << curr->data << " ";
+        std::cout << curr->data << " ";
         if (curr->left != nullptr)
             que.push(curr->left);
         if (curr->right != nullptr)
