@@ -1,7 +1,7 @@
 /*
-
+ 
  AVL TREE
-    - implemented in C++
+      - Implemented in C++
 
 References - Data Structures in C - Reema Theraja
              GeeksforGeeks
