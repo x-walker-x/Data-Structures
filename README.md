@@ -20,6 +20,5 @@
 4. Priority Queue
 5. Heap
 6. Red Black Tree 
-
-#### and much more 
+##### \tand much more 
 
