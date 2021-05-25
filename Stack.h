@@ -33,6 +33,7 @@ class Stack {
         T getTop();         // returns the data of top node of the stack
 };
 
+
 // Function to check if stack if empty
 template<class T>
 bool Stack<T>::isEmpty() {
