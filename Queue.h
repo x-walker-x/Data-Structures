@@ -27,6 +27,7 @@ class Queue {
         T getFront();           // return data of front node
 };
 
+
 // Function to check whether queue is empty or not
 template<class T>
 bool Queue<T>::isEmpty() {
