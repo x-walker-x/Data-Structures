@@ -1,7 +1,7 @@
 /*
 
     STACK 
-        - Language: C++
+        --- Language: C++
         
 */
 
