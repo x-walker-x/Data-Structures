@@ -13,7 +13,7 @@
 
 <br>
 
-### More Data Structures Implementations Will Add Soon
+### More Data Structure Implementations Will Add Soon
 
 1. Doubly Linked List
 2. Circular Linked List 
