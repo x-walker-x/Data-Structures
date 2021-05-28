@@ -1,4 +1,11 @@
-// for handling undeflow error
+/*
+
+    STACK 
+        - Language: C++
+        
+*/
+
+// To throw undeflow error
 #include<exception>
 
 template<class T>
