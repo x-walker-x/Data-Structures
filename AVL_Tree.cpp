@@ -12,6 +12,7 @@
 
 #include <iostream>
 
+// Node of AVL tree
 class Node
 {
     public:
