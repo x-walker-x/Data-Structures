@@ -5,20 +5,20 @@
 
 ### Data Structures Implemented 
 
-1. Stack
-2. Queue
-3. Binary Search Tree
-4. AVL Tree
+1. Singly Linked List
+2. Stack
+3. Queue
+4. Binary Search Tree
+5. AVL Tree
 
 <br>
 
 ### More Data Structures Implementations Will Add Soon
 
-1. Singly Linked List
-2. Doubly Linked List
-3. Circular Linked List 
-4. Priority Queue
-5. Heap
-6. Red Black Tree 
-7. <strong>and much more</strong> 
+1. Doubly Linked List
+2. Circular Linked List 
+3. Priority Queue
+4. Heap
+5. Red Black Tree 
+6. <strong>and much more</strong> 
 
