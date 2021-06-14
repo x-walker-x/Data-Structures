@@ -19,6 +19,5 @@
 2. Circular Linked List 
 3. Priority Queue
 4. Heap
-5. Red Black Tree 
-6. <strong>and much more</strong> 
+5. <strong>and much more</strong> 
 
