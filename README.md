@@ -19,5 +19,6 @@
 2. Circular Linked List 
 3. Priority Queue
 4. Heap
-5. <strong>and much more</strong> 
+
+#### and much more 
 
